@@ -64,7 +64,6 @@ var Greeting = require('../public/js/schema.js');
 exports.viewcard = function(req, res){
 
   var cardId = req.params.id 
-  , Greeting = db.model('Greeting', greetingSchema)
   , db = mongoose.createConnection(uristring);
     
       db.once('open', function() {
@@ -78,8 +77,8 @@ exports.viewcard = function(req, res){
           cardType: String,
           sent: Boolean
         });
-
-      Greeting.findOne({'_id' : cardId}, function(err, reply){  
+  var Greeting = db.model('Greeting', greetingSchema)
+  Greeting.findOne({'_id' : cardId}, function(err, reply){  
          //renders the template for viewing in jade if the card is found
         if (reply) {
           var cardContents = {
