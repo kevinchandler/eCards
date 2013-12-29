@@ -106,6 +106,7 @@ var uristring =
 	  		if (String(greeting[i].toSend) == String(today) && greeting[i].sent == false) {
 	  			//if a card has been found with today's date and hasn't been sent, it will send it and update the flag parameter to true, bypassing it in the future.
 			  	email(greeting[i].toEmail, greeting[i].fromEmail, greeting[i].toName, greeting[i].message, greeting[i].id);
+				var query = { sent: 'false', toSend: greeting[i].toSend }; //query param for db updating
 				Greeting.update(query, { sent: 'true' }, function(err, res) {
 				})
 	  		}
