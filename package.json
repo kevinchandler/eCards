@@ -1,0 +1,17 @@
+{
+  "name": "eCards",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*",
+    "mongoose": "~3.8.1",
+    "sendgrid": "~0.4.4",
+    "benchmark": "~1.0.0",
+    "dotenv": "~0.2.3"
+  },
+   "author": "Kevin Chandler, http://imkev.in"
+}

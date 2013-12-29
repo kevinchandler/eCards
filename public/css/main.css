@@ -1,0 +1,139 @@
+/* 	Plaintshirt template 
+	Main stylesheet */
+
+body {
+	background: url(/img/mail.png) no-repeat;
+	background-color: #fefefe;	
+}
+.navbar .navbar-default {
+	min-width: 100vw;
+}
+.navbar-default {
+	background-color: #313942;
+}
+.navbar-default .navbar-brand {
+	color: grey;
+}
+.navbar-default .navbar-brand:hover {
+	color: #fefefe;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fefefe;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: grey;
+}
+
+.btn-success {
+	background-color: #008ED5;
+}
+.btn-success:hover {
+	color: #313942;
+	background-color: #008ED5;
+}
+h3 {
+	color: #313942;
+	font-variant: small-caps;
+	font-size: 2em;
+	display: block;
+}
+h3  span {
+	font-variant: normal;
+}
+/* on mobile will need to change this code vv*/
+
+ form input, form textarea, form select {
+	width: 20em;
+	height: 3em;
+	margin-bottom: 1em;
+	opacity: 0.9;
+}
+form {
+	margin-top: 2em;
+	height: 12.5em;
+	margin-left: 10%;
+}
+
+
+form textarea {
+	width: 20em;
+	height: 6.5em;
+
+}
+ 
+  select, select option {
+/* 	color: #5cb85c;
+*/ 	font-size: 1em;
+ 	width: 15em;
+	letter-spacing: 2px;
+	height: 2em;
+	padding-left: 1em;
+	margin-top: .5em;
+	margin-left: -10%;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+button.btn {
+	display: inline;
+	width: 20em;
+	height: 5em;
+	font-variant: small-caps;
+	margin-top: 1em;
+	margin-right: 1em;
+}
+button[type='submit'] {
+	margin-top: 3em;
+	margin-left: -5%;
+	width: 15em;
+	height: 2.5em;
+}
+
+
+
+li {
+	text-align: left;
+	line-height: 2em;
+	border-bottom: 1px solid;
+	margin-bottom: 1em;
+	font-size: 1.3em;
+	padding: 1.2em;
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+}
+li:last-of-type {
+	border-bottom: none;
+}
+.today {
+	font-size: 1em;
+}
+
+
+
+
+#success:not(:target), #error:not(:target) {
+	display: none;
+}
+/*hide alerts when not targeted*/
+
+/* button displayed on card */
+.replybtn {
+	position: fixed;
+	top: 5%;
+	right: 0;
+}
+/* #how it works modal popover */
+.info li {
+	list-style-type: none;
+}
+.glyphicon {
+  font-variant: normal;
+}
+
+/*flash messages on success/error when saving card*/
+.message { 
+	font-variant: small-caps;
+}

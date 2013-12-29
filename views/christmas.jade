@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='../css/christmas.css')
+  div(class='col-md-12')
+    div(class='col-md-4')
+      img(class='slut floating' src='../img/xmasslut2.jpeg', width='100%' style='z-index: 21;')
+    div(class='col-md-7')
+      .row
+        .to Merry Christmas, #{toName}
+        hr
+        .message
+          | #{message}
+        p.ending
+          hr
+          span.pulse ❤ 
+          |  #{fromName}
+    a.btn.btn-sm.btn-success.replybtn(href='/')
+      | Send #{fromName} an eCard  
+      span.glyphicon.glyphicon-share-alt
+    
+
+  

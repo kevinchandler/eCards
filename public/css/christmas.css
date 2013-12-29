@@ -1,0 +1,97 @@
+body {
+  background: none;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: tomato;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: inline-block;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+strong {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -80px;
+  background: white;
+  color: tomato;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 0.7em;
+  text-align: center;
+  width: 3.125em;
+  transition: margin-top .1s;
+}
+
+i {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: white;
+  position: absolute;
+  margin-top: 33px;
+  margin-right: -10px;
+  right: 50%;
+}
+
+.c {
+  position: absolute;
+  top: 50%;
+  margin-top: -.9em;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+.ending:hover {
+    background: white;
+    color: tomato;
+}
+div:hover {
+  background: white;
+  color: tomato;
+}
+
+div:hover > strong {
+  margin-top: -4.6875em;
+}
+
+span {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none; 
+}
+
+
+p.heart {
+    font-size:400%;
+}
+
+.message {
+    display: block;
+}
+.ending {
+  display: block;
+    margin: 2em;
+    font-style: italic;
+}
+#message {
+    color: white;
+    background-color: tomato;
+    border-bottom-right-radius: 20%
+    border-top-right-radius: 20%
+}
+
+#message:hover {
+  background: white;
+  color: beige;
