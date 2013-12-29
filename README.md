@@ -3,7 +3,7 @@ eCards
 
 Send someone an e-card!
 
-Note: This app requires <a href='http://nodejs.org'>Nodejs</a> & a sendgrid account to send the cards <a href='https://sendgrid.com'>Sign up for a free account</a>
+Note: This app requires <a href='http://nodejs.org'>Nodejs</a> and a <a href='https://sendgrid.com'>Sendgrid account</a> (it's free) to send the cards
 
 1. Git clone git@github.com:plaintshirt/eCards.git
 2. npm install
